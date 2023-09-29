@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tab Menu</title>
+</head>
+<body>
+    <div class="tab-menu-container">
+        <div class="tabs">
+          <div class="tab active" data-index="1">Slider</div>
+          <div class="tab" data-index="2">To Do List</div>
+        </div>
+      
+        <div class="content">
+          <div class="show" data-index="1">
+            <div class="slider-container" id="slider-container">
+                <div class="slider">
+                    <img src="src/images/C.png" id="sliderimg">
+                </div>
+                <div class="btns">
+                    <i id="prevBtn" class="fa-solid fa-angles-left"></i>
+                    <i id="nextBtn" class="fa-solid fa-angles-right"></i>
+                </div>
+            </div>
+          </div>
+          <div data-index="2">
+            <div class="container">
+                <div class="container-title">Task Manager</div>
+                <form action="">
+                    <input type="text" placeholder="Task name" class="taskName" id="taskName">
+                    <input type="button" onclick="taskAdd()" value="Add" class="taskAdd">
+                </form>
+                <ul class="taskList" id="myTasks">
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>  
+    <script src="src/js/script.js"></script>
+</body>
+</html>
